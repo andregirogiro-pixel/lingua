@@ -1,0 +1,68 @@
+{
+  "etapa": 2,
+  "leitor_independente_corpus_real": {
+    "verificacoes_passadas": 6,
+    "falhas": 0,
+    "fragmentos": 8594,
+    "blocos": 7754,
+    "fontes": 19,
+    "contextos_amostrados": 67,
+    "arquivos_hashes_preservados": 28
+  },
+  "adaptador_novo_no_projeto": {
+    "arquivos_adicionados": 3,
+    "arquivos_originais_alterados": 0,
+    "testes_passaram": 38,
+    "validacao_mac_adaptador_real": "pendente"
+  },
+  "driver_adaptador_testes_passaram": 5,
+  "regressao_existente": {
+    "metodos_executados": 69,
+    "metodos_com_divergencias_preexistentes": 2,
+    "falhas_em_subtestes": 3,
+    "erros_de_contexto_de_assercao": 1,
+    "problemas": [
+      {
+        "teste": "EntradaTests.test_vazio_e_paragrafos_invalidos",
+        "causa": "Teste exige dois parágrafos; implementação atual aceita texto não vazio até 400 palavras."
+      },
+      {
+        "teste": "BuscaTests.test_estrategia_analista_continua_restrita_a_paragrafos_e_documento",
+        "causa": "Teste exige rejeição de períodos/contextos; implementação atual os aceita."
+      }
+    ],
+    "arquivos_de_regra_e_testes_originais_preservados": true
+  },
+  "nao_executado": [
+    "Suíte completa de importação (10 fixtures JSON ausentes)",
+    "Casos opcionais sobre índice legado/vetorização real no ambiente de nuvem",
+    "Buscas sobre o backend Camada A",
+    "Chamadas a provedores",
+    "Execução do adaptador real no corpus completo do Mac"
+  ],
+  "instalador_verificado": [
+    "preservação dos 107 arquivos originais",
+    "adição de três arquivos",
+    "idempotência",
+    "recusa de conflitos",
+    "recusa de diferença de versão",
+    "recusa de recibo existente",
+    "rollback simulado e ausência de arquivos temporários residuais"
+  ],
+  "servidor_local_verificado": [
+    "GET / 200",
+    "GET /static/app.js 200",
+    "GET /api/status 200; pronto false pela ausência do índice legado"
+  ],
+  "ambiente_nuvem": {
+    "python": "3.12",
+    "numpy": "2.3.5",
+    "flask": "3.1.3",
+    "certifi": "2026.7.22",
+    "configuracao_reutilizavel": "install_script e start_skill salvos; publicação da configuração não realizada"
+  },
+  "matriz_corpus_original_alterada": false,
+  "modelo_baixado": false,
+  "backend_ativado": false,
+  "lancador_verificado": "Instalação com caminhos com espaços, geração de diagnóstico diante de corpus ausente e propagação da falha; não equivale a execução no corpus real."
+}
