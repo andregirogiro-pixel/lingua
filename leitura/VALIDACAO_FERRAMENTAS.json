@@ -1,0 +1,15 @@
+{
+  "leitor_testes_passaram": 26,
+  "driver_testes_passaram": 8,
+  "verificacoes_adicionais": {
+    "coleta_codigo": "código incluído; env/dados/caches/dependências/symlinks excluídos; origem preservada; sobrescrita recusada",
+    "lancador_sintaxe_bash": "passou",
+    "lancador_fluxo_completo_fixture": "passou",
+    "lancador_preservacao_corpus_fixture": "passou",
+    "lancador_coleta_mesmo_com_falha_de_leitura": "passou"
+  },
+  "corpus_real_leitor_etapa2_executado": false,
+  "aplicativo_integrado": false,
+  "buscas_executadas_neste_diagnostico": false,
+  "novo_modelo_baixado": false
+}
