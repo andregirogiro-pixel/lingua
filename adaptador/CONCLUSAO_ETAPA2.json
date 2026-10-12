@@ -1,0 +1,219 @@
+{
+  "schema": "conclusao_integracao_camada_a.v1",
+  "etapa": 2,
+  "situacao": "concluida_com_limites",
+  "escopo": "Adaptador opcional de leitura compatível com o Agente Analista; aplicação e verificação no corpus completo no Mac.",
+  "execucao_mac_inicio": "2026-10-12T05:15:30.794455-03:00",
+  "execucao_mac_fim": "2026-10-12T05:15:51.116884-03:00",
+  "relatorio_recebido": {
+    "arquivo": "adaptador_camada_a_20261012_051529_31262.json",
+    "bytes": 104703,
+    "sha256": "d6768f415e471aa9867c9326a897f59e8c80ec47882731ab533d38f926323d2c",
+    "estado": "adaptador_real_leitura_verificado_com_limites"
+  },
+  "continuidade": {
+    "baseline_etapa1_sha256": "c6e43bc1d4d7b83825d22f1b44607f3f693772336e72970620f44c272f5af496",
+    "leitura_independente_mac_derivada_sha256": "21d7ebfefd9851f84f1c9f9a37fe44869beabd970b4b5044be1c0a881f7f45b0",
+    "commit_pacote_testado": "145643e7ea96eb7ead564e78b8f5a7c8555737d3",
+    "pacote_zip_sha256": "b67c99cce1184dbb7f101b5e13ec38ee6dda2ea919aba077fbed7b5f05b4ac26",
+    "adaptador_sha256": "eb2bcbbc2a6afbcb24bb27da800ba25ca8d44552efb6ce26aa100199cf5f3b52"
+  },
+  "verificacao_mac": {
+    "verificacoes_passaram": 11,
+    "falhas": 0,
+    "contagens": {
+      "obras": 19,
+      "secoes": 874,
+      "paginas_pdf": 5968,
+      "blocos": 7754,
+      "fragmentos": 8594
+    },
+    "arquivos_corpus_com_hashes_inalterados": 28,
+    "modulos_projeto_com_hashes_inalterados": 6,
+    "vetores": {
+      "shape": [
+        8594,
+        1024
+      ],
+      "dtype": "float32",
+      "linhas_comparadas_com_npy_original": 8594,
+      "modo_mmap": "r",
+      "mesmo_objeto_mmap_do_leitor": true
+    },
+    "amostras": {
+      "fragmentos": 57,
+      "fragmentos_por_fonte": 3,
+      "contextos": 57,
+      "citacoes_literais": 57,
+      "citacoes_cobrindo_mais_de_um_fragmento": 23
+    },
+    "fragmentos_da_fonte_antiga_v19_marcados": 1372,
+    "verificacoes": [
+      {
+        "nome": "baseline_etapa1_concluido",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_baseline": 28,
+          "contagens_esperadas": {
+            "obras": 19,
+            "secoes": 874,
+            "paginas": 5968,
+            "blocos": 7754,
+            "fragmentos": 8594
+          }
+        }
+      },
+      {
+        "nome": "continuidade_com_leitura_real_mac",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "verificacoes_leitor": 6,
+          "arquivos_baseline": 28
+        }
+      },
+      {
+        "nome": "hashes_antes_de_abrir_leitor",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_conferidos": 28
+        }
+      },
+      {
+        "nome": "ids_e_contagens_jsonl",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "contagens_lidas": {
+            "obras": 19,
+            "secoes": 874,
+            "paginas": 5968,
+            "blocos": 7754,
+            "fragmentos": 8594
+          }
+        }
+      },
+      {
+        "nome": "modulos_projeto_antes_importacao",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {}
+      },
+      {
+        "nome": "contrato_real_ids_indices_originais_aliases",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "fragmentos_conferidos": 8594,
+          "blocos_conferidos": 7754,
+          "fontes_conferidas": 19,
+          "fragmentos_marcados_fonte_antiga": 1372
+        }
+      },
+      {
+        "nome": "matriz_original_mmap_sem_copia_ou_remocao",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "linhas_comparadas": 8594,
+          "shape": [
+            8594,
+            1024
+          ],
+          "dtype": "float32",
+          "mesmo_objeto_mmap_do_leitor": true,
+          "modo_mmap": "r"
+        }
+      },
+      {
+        "nome": "contextos_reais_amostrados_raio1",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "contextos_conferidos": 57
+        }
+      },
+      {
+        "nome": "citacoes_tecnicas_validadores_locais",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "citacoes_conferidas": 57
+        }
+      },
+      {
+        "nome": "modulos_projeto_apos_leitura",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {}
+      },
+      {
+        "nome": "hashes_apos_leitura",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_conferidos": 28
+        }
+      }
+    ]
+  },
+  "conferencia_do_relatorio": {
+    "concluida": true,
+    "onze_verificacoes_unicas_e_sem_falhas": true,
+    "hashes_do_corpus_comparados_com_baseline_e_leitura_previa": true,
+    "hashes_dos_seis_modulos_comparados_com_codigo_recebido_e_adaptador_entregue": true,
+    "amostras_de_fontes_consistentes_com_leitura_previa": true,
+    "flags_de_escopo_coerentes": true,
+    "corpus_completo_reexecutado_na_nuvem": false
+  },
+  "ambiente_mac_observado_no_terminal": {
+    "python_ambiente": "venv-agente-e5-intel",
+    "numpy": "1.26.4",
+    "dependencias_reinstaladas_nesta_aplicacao": false
+  },
+  "validacao_previa_na_nuvem": {
+    "testes_do_adaptador_e_core_passaram": 38,
+    "testes_do_driver_passaram": 5,
+    "regressoes_existentes_metodos_executados": 69,
+    "metodos_com_divergencias_preexistentes": 2,
+    "suite_completa_validada": false,
+    "detalhes": "VALIDACAO.json"
+  },
+  "limites": [
+    "Importa o adaptador real e os validadores locais do projeto; não inicia Flask, rotas ou serviço.",
+    "O backend de busca permanece separado desta conferência de leitura.",
+    "A marca da fonte antiga do volume 19 não é consumida pelo Buscador legado; não conectar este adaptador ao Buscador antes da etapa de busca com a política de exclusão implementada.",
+    "Igualdade de todas as linhas com o NPY comprova preservação do arquivo auditado, não comprova a origem semântica de cada embedding.",
+    "Citações são recortes técnicos locais por amostragem, sem avaliação interpretativa ou provedor.",
+    "Páginas são do PDF; bibliografia completa e numeração impressa permanecem pendentes.",
+    "A auditoria e a leitura não certificam fidelidade editorial integral. Mantêm-se as correções pendentes nos volumes 1/6 e a publicidade nos volumes 4/5/7.",
+    "A bibliografia completa, a numeração impressa, a nova versão vetorial do volume 19 e as dez fixtures JSON ausentes na nuvem permanecem pendentes."
+  ],
+  "ativacao": {
+    "aplicativo_integrado": false,
+    "backend_ativado": false,
+    "buscador_instanciado": false,
+    "buscas_executadas": false,
+    "modelos_carregados": false,
+    "chamadas_api_executadas": false
+  },
+  "decisao": {
+    "etapa2_encerrada": true,
+    "repetir_instalacao_ou_diagnostico_atual_necessario": false,
+    "etapa3_iniciada": false,
+    "proximo_escopo": "Discutir a conexão da busca com exclusão efetiva da fonte antiga do volume 19 e política correspondente para busca vetorial e lexical."
+  }
+}

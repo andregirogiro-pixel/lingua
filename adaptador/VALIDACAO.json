@@ -13,7 +13,7 @@
     "arquivos_adicionados": 3,
     "arquivos_originais_alterados": 0,
     "testes_passaram": 38,
-    "validacao_mac_adaptador_real": "pendente"
+    "validacao_mac_adaptador_real": "concluida_com_limites"
   },
   "driver_adaptador_testes_passaram": 5,
   "regressao_existente": {
@@ -37,8 +37,7 @@
     "Suíte completa de importação (10 fixtures JSON ausentes)",
     "Casos opcionais sobre índice legado/vetorização real no ambiente de nuvem",
     "Buscas sobre o backend Camada A",
-    "Chamadas a provedores",
-    "Execução do adaptador real no corpus completo do Mac"
+    "Chamadas a provedores"
   ],
   "instalador_verificado": [
     "preservação dos 107 arquivos originais",
@@ -64,5 +63,38 @@
   "matriz_corpus_original_alterada": false,
   "modelo_baixado": false,
   "backend_ativado": false,
-  "lancador_verificado": "Instalação com caminhos com espaços, geração de diagnóstico diante de corpus ausente e propagação da falha; não equivale a execução no corpus real."
+  "lancador_verificado": "O launcher foi executado no corpus completo do Mac, adicionou três arquivos e produziu o relatório de leitura aprovado. Os checks locais anteriores de conflitos, idempotência e rollback também permanecem registrados.",
+  "adaptador_real_corpus_mac": {
+    "verificacoes_passaram": 11,
+    "falhas": 0,
+    "contagens": {
+      "obras": 19,
+      "secoes": 874,
+      "paginas_pdf": 5968,
+      "blocos": 7754,
+      "fragmentos": 8594
+    },
+    "arquivos_corpus_com_hashes_inalterados": 28,
+    "modulos_projeto_com_hashes_inalterados": 6,
+    "vetores": {
+      "shape": [
+        8594,
+        1024
+      ],
+      "dtype": "float32",
+      "linhas_comparadas_com_npy_original": 8594,
+      "modo_mmap": "r",
+      "mesmo_objeto_mmap_do_leitor": true
+    },
+    "amostras": {
+      "fragmentos": 57,
+      "fragmentos_por_fonte": 3,
+      "contextos": 57,
+      "citacoes_literais": 57,
+      "citacoes_cobrindo_mais_de_um_fragmento": 23
+    },
+    "fragmentos_da_fonte_antiga_v19_marcados": 1372,
+    "relatorio_sha256": "d6768f415e471aa9867c9326a897f59e8c80ec47882731ab533d38f926323d2c"
+  },
+  "conclusao": "CONCLUSAO_ETAPA2.json"
 }
