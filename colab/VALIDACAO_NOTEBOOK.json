@@ -25,5 +25,6 @@
   "pendencias": [
     "Usuário executará o notebook no Colab para gerar e conferir os vetores reais."
   ],
-  "pacote_sha256_fixado": "605e807571cc1778aaaead56903fa8301b3134a90e3f3f463ae64dd69321289e"
+  "pacote_sha256_fixado": "605e807571cc1778aaaead56903fa8301b3134a90e3f3f463ae64dd69321289e",
+  "pacote_commit_fixado": "6f7405787b34467c2af7718dc6454577d0db3aa5"
 }
