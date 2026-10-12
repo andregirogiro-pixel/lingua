@@ -4,6 +4,21 @@ Abra `gerar_volume19_colab.ipynb` no Colab. Se possível, selecione **Ambiente d
 execução → Alterar tipo de ambiente de execução → GPU**. Execute as células em
 ordem, ou use **Executar tudo**.
 
+Se a abertura pelo GitHub mostrar `Unexpected token '<'` ou `<!DOCTYPE`, baixe
+o notebook diretamente no terminal do Mac:
+
+```bash
+curl -fL \
+  "https://raw.githubusercontent.com/andregirogiro-pixel/lingua/e71ef8772ba6d5ca861617881076a04add5bc60a/colab/gerar_volume19_colab.ipynb" \
+  -o "$HOME/Downloads/gerar_volume19_colab.ipynb"
+```
+
+Abra [o Colab](https://colab.research.google.com/) e escolha **Arquivo → Abrir
+notebook → Fazer upload**. Selecione o `.ipynb` salvo em Downloads. Essa opção
+carrega o JSON local e contorna a integração de abertura com o GitHub. O arquivo
+publicado foi conferido como JSON válido; o erro de HTML sozinho não identifica
+a origem da falha no navegador.
+
 O notebook baixa a versão fixa do pacote `etapa3_busca.zip`, confere seu SHA-256
 e usa o texto preparado das páginas PDF 10–232. Não exige o PDF nem depende do
 ambiente Python do Mac. O texto e os registros serão processados no Google Colab.
