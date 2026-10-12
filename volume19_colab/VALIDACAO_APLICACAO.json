@@ -42,12 +42,27 @@
   "inferencias_realizadas_nesta_validacao": false,
   "modelos_carregados": false,
   "backend_ativado": false,
-  "validacao_base_historica_real_no_mac": "pendente",
+  "validacao_base_historica_real_no_mac": "concluida_com_limites",
   "conferencia_editorial_integral": false,
   "limites": [
     "Corpus histórico SQLite/NPY permanece somente no Mac; busca combinada deve ser conferida com o relatório da execução local.",
     "Conferência de hashes/linhas valida o vínculo registrado na geração; não é uma segunda inferência independente.",
     "Conferência editorial integral pendente.",
     "A instalação faz backup e confere versões, mas não fornece bloqueio atômico contra editor concorrente dos dois arquivos substituídos. Fechar o agente/editor antes de aplicar."
-  ]
+  ],
+  "relatorios_mac_conferidos": {
+    "importacao": {
+      "arquivo": "importacao_volume19_20261012_081535_35360.json",
+      "bytes": 2457,
+      "sha256": "55f8cbdd5387e8433163d27dbc479bd0a1846bf1d693f0c703bbf6cacee46a4d",
+      "estado": "volume19_real_importado_verificado_com_limites"
+    },
+    "busca": {
+      "arquivo": "busca_camada_a_20261012_081535_35360.json",
+      "bytes": 57637,
+      "sha256": "8e7fba63afeaae097bebd5f4831edb362394eaf03a0465350453fc4f0cb449a3",
+      "estado": "busca_real_verificada_com_limites"
+    }
+  },
+  "conclusao": "../busca/CONCLUSAO_ETAPA3.json"
 }

@@ -1,6 +1,6 @@
 {
   "etapa": 3,
-  "situacao": "volume19_colab_real_conferido_pendente_busca_completa_mac",
+  "situacao": "etapa3_tecnica_concluida_com_limites",
   "testes_fonte": {
     "executados": 77,
     "passaram": 77,
@@ -69,10 +69,10 @@
   },
   "nao_executado": [
     "Inferência E5 independente neste ambiente de auditoria (geração CUDA do usuário no Colab foi recebida e conferida)",
-    "Busca sobre o corpus completo do Mac",
     "Validação da relevância com consultas reais de relatos",
     "Suíte completa de importação (dez fixtures JSON congeladas ausentes e índice legado indisponível)",
-    "Chamadas a provedores de justificativas"
+    "Chamadas a provedores de justificativas",
+    "Ativação do servidor no Mac com backend selecionado e upload real pelas rotas"
   ],
   "limites": [
     "A revisão editorial integral permanece pendente.",
@@ -89,5 +89,21 @@
     "texto_integral_preservado": true,
     "cuda_declarada_no_relatorio": true,
     "inferência_independente_nuvem_executada": false
+  },
+  "busca_mac_real": {
+    "checks_passaram": 18,
+    "falhas": 0,
+    "fontes_fisicas": 2,
+    "fragmentos_totais": 9034,
+    "fragmentos_elegiveis": 7662,
+    "fragmentos_excluidos_fonte_antiga": 1372,
+    "volume19_novo_fragmentos": 440,
+    "base_historica_arquivos_hashes_inalterados": 28,
+    "volume19_arquivos_hashes_inalterados": 10,
+    "modulos_conferidos_inalterados": 10,
+    "casos_tecnicos_com_linhas_existentes": 20,
+    "verificacoes_citacoes_literais": 40,
+    "blocos_distintos_nessas_citacoes": 30,
+    "conclusao": "CONCLUSAO_ETAPA3.json"
   }
 }

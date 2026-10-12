@@ -1,0 +1,259 @@
+{
+  "schema": "conclusao_integracao_camada_a.v1",
+  "etapa": 3,
+  "situacao": "concluida_tecnicamente_com_limites",
+  "escopo": "Geração do volume 19 corrigido, importação no Mac e busca combinada sobre corpus completo. Ativação do servidor e avaliação com relatos reais permanecem separadas.",
+  "execucao_mac_inicio": "2026-10-12T08:15:37.951992-03:00",
+  "execucao_mac_fim": "2026-10-12T08:16:08.215343-03:00",
+  "relatorios_recebidos": {
+    "importacao": {
+      "arquivo": "importacao_volume19_20261012_081535_35360.json",
+      "bytes": 2457,
+      "sha256": "55f8cbdd5387e8433163d27dbc479bd0a1846bf1d693f0c703bbf6cacee46a4d",
+      "estado": "volume19_real_importado_verificado_com_limites"
+    },
+    "busca": {
+      "arquivo": "busca_camada_a_20261012_081535_35360.json",
+      "bytes": 57637,
+      "sha256": "8e7fba63afeaae097bebd5f4831edb362394eaf03a0465350453fc4f0cb449a3",
+      "estado": "busca_real_verificada_com_limites"
+    }
+  },
+  "continuidade": {
+    "auditoria_etapa1_sha256": "c6e43bc1d4d7b83825d22f1b44607f3f693772336e72970620f44c272f5af496",
+    "adaptador_etapa2_derivado_sha256": "18ca4a6cde0ba470d0bb9fcb885958a2c49228031109a78f814faedb5fbc4ae6",
+    "relatorio_colab_sha256": "344d92482dfe7bf77f8942356eea0ab8fe67af32728e8d0bc7758509859c82b1",
+    "zip_colab_sha256": "7b511841e49bcf20631d246450194b2429d8802771541aa84f472a1a4128e410"
+  },
+  "verificacao_mac": {
+    "checks_passaram": 18,
+    "falhas": 0,
+    "fontes_fisicas": 2,
+    "fragmentos_totais": 9034,
+    "fragmentos_elegiveis": 7662,
+    "fragmentos_excluidos_fonte_antiga": 1372,
+    "blocos_totais": 7977,
+    "blocos_elegiveis": 7292,
+    "volume19_novo_fragmentos": 440,
+    "volume19_novo_blocos": 223,
+    "volume19_corrigido_presente": true,
+    "matrizes_separadas_somente_leitura": true,
+    "base_historica_arquivos_hashes_inalterados": 28,
+    "volume19_arquivos_hashes_inalterados": 10,
+    "modulos_conferidos_inalterados": 10,
+    "casos_tecnicos_com_linhas_existentes": 20,
+    "consultas_por_caso": 3,
+    "tentativa_com_vetor_fonte_antiga_rejeitada_dos_resultados": true,
+    "obras_elegiveis_observadas": 19,
+    "verificacoes_citacoes_literais": 40,
+    "blocos_distintos_nessas_citacoes": 30,
+    "revisao_vetorial_incompativel_rejeitada": true,
+    "fechamento_recursos_conferido": true,
+    "verificacoes": [
+      {
+        "nome": "baseline_etapa1_concluido",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_baseline": 28,
+          "contagens_esperadas": {
+            "obras": 19,
+            "secoes": 874,
+            "paginas": 5968,
+            "blocos": 7754,
+            "fragmentos": 8594
+          }
+        }
+      },
+      {
+        "nome": "continuidade_etapas1_2_concluidas",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "verificacoes_etapa2": 11,
+          "arquivos_baseline": 28
+        }
+      },
+      {
+        "nome": "hashes_antes_de_abrir_leitor",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_conferidos": 28
+        }
+      },
+      {
+        "nome": "ids_e_contagens_jsonl",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "contagens_lidas": {
+            "obras": 19,
+            "secoes": 874,
+            "paginas": 5968,
+            "blocos": 7754,
+            "fragmentos": 8594
+          }
+        }
+      },
+      {
+        "nome": "modulos_projeto_antes_importacao",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {}
+      },
+      {
+        "nome": "volume19_artefatos_antes_busca",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_conferidos": 10
+        }
+      },
+      {
+        "nome": "origens_dos_modulos_reais",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {}
+      },
+      {
+        "nome": "volume19_manifesto_geracao_e_integridade_validados",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "validador_real_sem_inferencia": true,
+          "manifesto_sha256": "e272c12d1c56cebbfac6aee4a7466c807fb063a863c7095b9460bf5643a90a99"
+        }
+      },
+      {
+        "nome": "fontes_indices_e_matrizes_originais_somente_leitura",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "fontes": 2,
+          "fragmentos_total": 9034,
+          "fragmentos_elegiveis": 7662,
+          "fragmentos_bloqueados": 1372,
+          "matriz_concatenada_criada": false
+        }
+      },
+      {
+        "nome": "sqlite_fts5_somente_leitura",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "fontes_sqlite_conferidas": 2
+        }
+      },
+      {
+        "nome": "rankings_topk_filtrados_antes_rrf",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "linhas_tecnicas_testadas": 20,
+          "fontes_testadas": 20,
+          "tentativa_vetor_da_fonte_antiga": true
+        }
+      },
+      {
+        "nome": "candidatos_rrf_ancoras_e_pontuacoes_sem_fonte_antiga",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {}
+      },
+      {
+        "nome": "citacoes_literais_dos_resultados_reais",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "citacoes_conferidas": 40
+        }
+      },
+      {
+        "nome": "contrato_vetorial_incompativel_rejeitado",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "revisao_divergente_rejeitada": true
+        }
+      },
+      {
+        "nome": "fechamento_deterministico_buscador_e_fontes",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "busca_apos_close_rejeitada": true
+        }
+      },
+      {
+        "nome": "volume19_artefatos_apos_busca",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_conferidos": 10
+        }
+      },
+      {
+        "nome": "modulos_projeto_apos_busca",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {}
+      },
+      {
+        "nome": "hashes_apos_leitura",
+        "estado": "passou",
+        "falhas": {},
+        "amostra_ids": {},
+        "dados": {
+          "arquivos_conferidos": 28
+        }
+      }
+    ]
+  },
+  "conferencia_do_relatorio": {
+    "contagens_e_checks_coerentes": true,
+    "hashes_comparados_com_etapas_anteriores_e_colab": true,
+    "codigo_dos_dez_modulos_corresponde_ao_entregue": true,
+    "base_completa_reexecutada_na_nuvem": false
+  },
+  "ativacao": {
+    "backend_ativado_pelo_diagnostico": false,
+    "servidor_iniciado_pelo_diagnostico": false,
+    "provedor_chamado": false,
+    "inferencia_real_nesta_busca": false,
+    "rede_utilizada": false
+  },
+  "limites": [
+    "Consultas técnicas usam linhas passage: existentes; não são embeddings query: de relatos reais.",
+    "Esta execução confere exclusão, rankings, RRF e citações; não mede pertinência ou qualidade semântica.",
+    "Preservar o NPY auditado não prova a correspondência histórica de cada embedding com seu texto.",
+    "Fonte antiga do volume 19 continua arquivada e deve ser excluída antes de qualquer top-k.",
+    "O aplicativo, suas rotas e o provedor não são iniciados por esta ferramenta.",
+    "Sem o pacote vetorizado do novo volume 19, valida-se a busca das outras fontes somente.",
+    "Páginas são do PDF; conferência editorial e paginação impressa permanecem separadas.",
+    "Não foi executado no diagnóstico um upload de exportação real do Língua pelas rotas do servidor ou uma avaliação por provedor.",
+    "A suíte completa de importação não foi executada na nuvem: dez fixtures congeladas não vieram no ZIP de código; divergências preexistentes seguem registradas em busca/VALIDACAO.json."
+  ],
+  "decisao": {
+    "etapa3_tecnica_encerrada": true,
+    "repetir_importacao_geracao_ou_diagnostico_necessario": false,
+    "proximo_passo": "Iniciar o servidor no Mac com seleção explícita de camada_a e volume 19 corrigido, conferir /api/status e usar uma exportação real do Língua para avaliar resultados."
+  }
+}
