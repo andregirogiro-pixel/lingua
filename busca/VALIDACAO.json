@@ -1,6 +1,6 @@
 {
   "etapa": 3,
-  "situacao": "implementacao_e_notebook_preparados_pendente_execucao_colab_e_diagnostico_mac",
+  "situacao": "volume19_colab_real_conferido_pendente_busca_completa_mac",
   "testes_fonte": {
     "executados": 77,
     "passaram": 77,
@@ -68,7 +68,7 @@
     "selecao_camada_a": "explícita por parâmetro ou AGENTE_ANALISTA_CORPUS_BACKEND=camada_a"
   },
   "nao_executado": [
-    "Inferência real E5/Torch na nuvem ou GPU do Colab",
+    "Inferência E5 independente neste ambiente de auditoria (geração CUDA do usuário no Colab foi recebida e conferida)",
     "Busca sobre o corpus completo do Mac",
     "Validação da relevância com consultas reais de relatos",
     "Suíte completa de importação (dez fixtures JSON congeladas ausentes e índice legado indisponível)",
@@ -81,5 +81,13 @@
     "As matrizes de fontes são preservadas separadamente; FTS5 elegível é temporário em memória.",
     "A correspondência histórica de embeddings do corpus antigo permanece não comprovada.",
     "O usuário deve fechar o servidor/editor durante a aplicação; o instalador não garante exclusão de edições concorrentes entre conferência e substituição."
-  ]
+  ],
+  "volume19_colab_real": {
+    "verificacao": "../volume19_colab/CONFERENCIA_COLAB.json",
+    "vetores": 440,
+    "dimensao": 1024,
+    "texto_integral_preservado": true,
+    "cuda_declarada_no_relatorio": true,
+    "inferência_independente_nuvem_executada": false
+  }
 }

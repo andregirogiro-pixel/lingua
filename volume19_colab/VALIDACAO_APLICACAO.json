@@ -1,0 +1,53 @@
+{
+  "etapa": "aplicacao_volume19_real_colab",
+  "execucao_colab": "20261012T103312Z_9f45c9aa",
+  "estado": "pacote_mac_testado_com_limites",
+  "python_nuvem": "3.12",
+  "numpy_nuvem": "2.3.5",
+  "testes_importador": {
+    "executados": 10,
+    "passaram": 10,
+    "falhas": 0,
+    "vetores_reais_por_validacao": 440,
+    "comando": "python -B -m unittest discover -s ferramentas -p test_importar_volume19.py -v"
+  },
+  "testes_funcionais": [
+    "validação real integral de dez arquivos e 440 linhas; destino com espaços",
+    "repetição idempotente com hashes preservados",
+    "conflito local preservado e recusado",
+    "arquivo extra recusado sem remoção",
+    "JSON, ZIP e código alterados recusados antes da extração",
+    "symlink em destino e pai recusado",
+    "recibo existente preservado",
+    "falha parcial de publicação e falha de recibo com rollback",
+    "edição concorrente preservada no rollback",
+    "validador local alterado recusado",
+    "ZIPs com traversal, duplicatas, links e caminhos inválidos recusados"
+  ],
+  "launcher_integrado": {
+    "fonte": "cópia temporária do projeto recebido, acrescida da etapa 2",
+    "caminhos_com_espacos": true,
+    "arquivos_substituidos": 2,
+    "novos": 6,
+    "backup_verificado": true,
+    "demais_originais_preservados": true,
+    "corpus_novo_importado": true,
+    "vetores_reais": 440,
+    "base_historica": "pasta vazia usada para verificar falha real",
+    "diagnostico_estado": "falhou",
+    "diagnostico_json_gerado": true,
+    "exit_status_preservado": 1
+  },
+  "bash_sintaxe": "passou",
+  "inferencias_realizadas_nesta_validacao": false,
+  "modelos_carregados": false,
+  "backend_ativado": false,
+  "validacao_base_historica_real_no_mac": "pendente",
+  "conferencia_editorial_integral": false,
+  "limites": [
+    "Corpus histórico SQLite/NPY permanece somente no Mac; busca combinada deve ser conferida com o relatório da execução local.",
+    "Conferência de hashes/linhas valida o vínculo registrado na geração; não é uma segunda inferência independente.",
+    "Conferência editorial integral pendente.",
+    "A instalação faz backup e confere versões, mas não fornece bloqueio atômico contra editor concorrente dos dois arquivos substituídos. Fechar o agente/editor antes de aplicar."
+  ]
+}

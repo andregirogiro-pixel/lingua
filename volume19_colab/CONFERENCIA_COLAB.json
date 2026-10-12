@@ -1,0 +1,97 @@
+{
+  "schema": "conferencia_volume19_colab.v1",
+  "situacao": "geracao_colab_recebida_verificada_com_limites",
+  "execucao_id": "20261012T103312Z_9f45c9aa",
+  "concluido_colab_brasil": "2026-10-12T07:34:17.189143-03:00",
+  "relatorio_recebido": {
+    "arquivo": "volume19_vetores_colab_20261012T103312Z_9f45c9aa.json",
+    "bytes": 6384,
+    "sha256": "344d92482dfe7bf77f8942356eea0ab8fe67af32728e8d0bc7758509859c82b1"
+  },
+  "zip_recebido": {
+    "arquivo": "volume19_vetores_colab_20261012T103312Z_9f45c9aa.zip",
+    "bytes": 3228160,
+    "sha256": "7b511841e49bcf20631d246450194b2429d8802771541aa84f472a1a4128e410"
+  },
+  "codigo_gerador_pacote_sha256": "605e807571cc1778aaaead56903fa8301b3134a90e3f3f463ae64dd69321289e",
+  "modelo": "intfloat/multilingual-e5-large",
+  "revisao": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+  "fonte_pdf_sha256": "1b4ea213276f48f77b53349109c9d9a352ade2225de43aa50765225db5c0a3ba",
+  "ambiente_declarado_colab": {
+    "dispositivo": "cuda",
+    "lote": 2,
+    "python": "3.13.15",
+    "bibliotecas": {
+      "numpy": "2.1.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "4.51.3",
+      "huggingface-hub": "0.36.2",
+      "safetensors": "0.8.0",
+      "sentencepiece": "0.2.2"
+    }
+  },
+  "verificacao_integral": {
+    "arquivos_com_hashes_e_tamanhos_conferidos": 10,
+    "blocos": 223,
+    "fragmentos": 440,
+    "secoes": 49,
+    "paginas_pdf": 244,
+    "paginas_corpo": 223,
+    "intervalo_corpo": [
+      10,
+      232
+    ],
+    "texto_unicode_caracteres": 537994,
+    "texto_bytes_utf8": 557922,
+    "texto_sha256": "ab3e323c1fbcd5a89b9e8de7669d6a7e0948558f995cdee11b671ff960be4606",
+    "texto_byte_identico_a_preparacao_auditada": true,
+    "matriz_shape": [
+      440,
+      1024
+    ],
+    "matriz_dtype": "float32",
+    "linhas_finitas": 440,
+    "linhas_distintas": 440,
+    "hashes_entradas_e_linhas_conferidos": 440,
+    "norma_l2_minima_float64": 0.9999999956100488,
+    "norma_l2_maxima_float64": 1.0000000042906039,
+    "norma_l2_desvio_maximo": 4.389951180350238e-09,
+    "sqlite_integridade_e_referencias": "ok",
+    "fts5_operacional": true,
+    "fts5_moises_hits": 113,
+    "contextos_reais_conferidos": 440,
+    "consumidor_real_camada_a_abriu": true,
+    "artefatos_inalterados_depois_leitura": true
+  },
+  "teste_recuperacao_nuvem": {
+    "volume19_fonte": "corpus real do Colab, com 440 fragmentos",
+    "base": "fixture sintética de cinco fragmentos (um excluído)",
+    "fragmentos_totais": 445,
+    "fragmentos_elegiveis": 444,
+    "matrizes_separadas": true,
+    "linhas_tecnicas_do_volume19_testadas": [
+      0,
+      220,
+      439
+    ],
+    "citacoes_literais_validadas": 3,
+    "recuperacao_fusao_e_exclusao": "passaram",
+    "chamadas_a_provedor": false,
+    "nova_inferencia": false,
+    "avaliacao_relevancia_relato": false,
+    "base_completa_do_mac_testada": false
+  },
+  "limites": [
+    "O relatório documenta inferência CUDA real declarada pelo Colab; nesta conferência não foi reexecutado o E5 nem recalculados os tokens com outro tokenizador.",
+    "Hashes por linha vinculam os artefatos registrados; não são uma inferência independente.",
+    "A avaliação editorial integral, bibliografia e numeração impressa continuam pendentes.",
+    "A ligação à base completa com 7.222 fragmentos elegíveis antigos precisa ser conferida no Mac.",
+    "As 1.372 linhas antigas do volume 19 permanecem preservadas e excluídas da busca Camada A.",
+    "A ativação no servidor e chamadas a provedores não fazem parte deste diagnóstico."
+  ],
+  "decisao": {
+    "volume19_gerado_aceito_com_limites": true,
+    "ativado_no_mac": false,
+    "proxima_verificacao": "Busca composta sobre os 18 demais volumes e novo 19 no corpus real do Mac; esperado 9.034 fragmentos totais e 7.662 elegíveis."
+  }
+}
