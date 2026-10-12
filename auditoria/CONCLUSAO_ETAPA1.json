@@ -1,0 +1,499 @@
+{
+  "etapa": 1,
+  "situacao": "concluida_com_limites_documentados",
+  "verificacao_real": "Executada no Mac pelo usuário; relatório conferido neste ambiente",
+  "relatorio_original": {
+    "arquivo": "auditoria_camada_a_20261011_224524_20028.json",
+    "sha256": "16fc7a27a8693c76ee37e970a6fb373aa1ba1634bd444689b110b16d7a27d0f6",
+    "execucao_local": "2026-10-11T22:45:24.937182-03:00",
+    "fuso": "America/Sao_Paulo"
+  },
+  "contagens_confirmadas": {
+    "obras": 19,
+    "secoes": 874,
+    "paginas": 5968,
+    "blocos": 7754,
+    "fragmentos": 8594
+  },
+  "verificacoes": [
+    {
+      "nome": "manifesto_e_arquivos",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "contrato_metadados_esperado": {
+          "modelo": "intfloat/multilingual-e5-large",
+          "revisao": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+          "dimensao": 1024
+        },
+        "modelo": "intfloat/multilingual-e5-large",
+        "revisao": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+        "dimensao": 1024
+      }
+    },
+    {
+      "nome": "jsonl_obras",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "registros": 19,
+        "ids_unicos": 19
+      }
+    },
+    {
+      "nome": "jsonl_secoes",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "registros": 874,
+        "ids_unicos": 874
+      }
+    },
+    {
+      "nome": "jsonl_paginas",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "registros": 5968,
+        "ids_unicos": 5968
+      }
+    },
+    {
+      "nome": "jsonl_blocos",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "registros": 7754,
+        "ids_unicos": 7754
+      }
+    },
+    {
+      "nome": "jsonl_fragmentos",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "registros": 8594,
+        "ids_unicos": 8594
+      }
+    },
+    {
+      "nome": "contagens_e_volumes",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "contagens": {
+          "obras": 19,
+          "secoes": 874,
+          "paginas": 5968,
+          "blocos": 7754,
+          "fragmentos": 8594
+        },
+        "pacote_original_identificado_por_hash_zip": true,
+        "obras_esperadas": 19,
+        "pdfs_nao_indexados_declarados": 19
+      }
+    },
+    {
+      "nome": "textos_offsets_hashes_e_relacoes",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "blocos_que_cruzam_secoes": 779,
+        "textos_obras_conferidos": 19
+      }
+    },
+    {
+      "nome": "vizinhanca_e_ordem_fragmentos",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {}
+    },
+    {
+      "nome": "sqlite_somente_leitura_e_fts",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "fts_contrato_v1": {
+          "modulo_esperado": "fts5",
+          "tokenizador_esperado": "unicode61 remove_diacritics 2",
+          "ddl_conferido": true
+        },
+        "contagens": {
+          "obras": 19,
+          "secoes": 874,
+          "paginas": 5968,
+          "blocos": 7754,
+          "fragmentos": 8594,
+          "fragmentos_fts": 8594
+        },
+        "consulta_lexical": {
+          "parametrizada": true,
+          "ordem": "BM25 ASC",
+          "resultados": [
+            {
+              "fragmento_id": "obra-281b0b52dc9fb0af-b00298-f000",
+              "score": -3.569012745335078
+            },
+            {
+              "fragmento_id": "obra-20a3cb388cbb78cd-b00087-f000",
+              "score": -3.5158134136671175
+            },
+            {
+              "fragmento_id": "obra-20a3cb388cbb78cd-b00100-f000",
+              "score": -3.5158134136671175
+            },
+            {
+              "fragmento_id": "obra-09c5629d767f7dde-b00226-f000",
+              "score": -3.4822248486051484
+            },
+            {
+              "fragmento_id": "obra-d2e15be704adcec1-b00784-f000",
+              "score": -3.4628457357078077
+            },
+            {
+              "fragmento_id": "obra-bc0f8d49e6035891-b00248-f000",
+              "score": -3.453125416177565
+            },
+            {
+              "fragmento_id": "obra-da23519f73b81594-b00198-f000",
+              "score": -3.4227765175398464
+            },
+            {
+              "fragmento_id": "obra-bc0f8d49e6035891-b00142-f000",
+              "score": -3.409436428726798
+            }
+          ]
+        }
+      }
+    },
+    {
+      "nome": "vetores_numpy_memmap",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "shape": [
+          8594,
+          1024
+        ],
+        "dtype": "float32",
+        "memoria": "mapeamento somente leitura; lotes de 512 linhas",
+        "linhas_conferidas": 8594,
+        "norma_l2_minima": 0.9999999223629964,
+        "norma_l2_maxima": 1.0000000882472853,
+        "tolerancia_absoluta": 3e-05
+      }
+    },
+    {
+      "nome": "hashes_baseline_atual",
+      "estado": "passou",
+      "falhas": {},
+      "amostra_ids": {},
+      "dados": {
+        "arquivos_conferidos": 28
+      }
+    }
+  ],
+  "arquivos_hashes_antes_depois": [
+    {
+      "arquivo": "blocos.jsonl",
+      "bytes": 18078964,
+      "sha256": "41fb7e2d6761f0438e7008adad4a7d89d947a66570b5ac5ab1b5186f2b264449",
+      "sha256_antes": "41fb7e2d6761f0438e7008adad4a7d89d947a66570b5ac5ab1b5186f2b264449",
+      "sha256_depois": "41fb7e2d6761f0438e7008adad4a7d89d947a66570b5ac5ab1b5186f2b264449",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "corpus.sqlite",
+      "bytes": 75567104,
+      "sha256": "0d3de5269cc6c98d9c083a28fce827e8ea25573fa5ebd7fc1998b13c75e15ea6",
+      "sha256_antes": "0d3de5269cc6c98d9c083a28fce827e8ea25573fa5ebd7fc1998b13c75e15ea6",
+      "sha256_depois": "0d3de5269cc6c98d9c083a28fce827e8ea25573fa5ebd7fc1998b13c75e15ea6",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "fragmentos.jsonl",
+      "bytes": 17834248,
+      "sha256": "edbb9dc8f792a872a902434bc1db934f11443906123119dd0195ae502629e499",
+      "sha256_antes": "edbb9dc8f792a872a902434bc1db934f11443906123119dd0195ae502629e499",
+      "sha256_depois": "edbb9dc8f792a872a902434bc1db934f11443906123119dd0195ae502629e499",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "manifesto.json",
+      "bytes": 938,
+      "sha256": "92fd569355add2e83e316a8e613907018583ffe68447ea2759274b867a75d1a4",
+      "sha256_antes": "92fd569355add2e83e316a8e613907018583ffe68447ea2759274b867a75d1a4",
+      "sha256_depois": "92fd569355add2e83e316a8e613907018583ffe68447ea2759274b867a75d1a4",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "obras.jsonl",
+      "bytes": 7625,
+      "sha256": "efbcac6205dcd6b5aa691d0968355ea079fb77c451bcd01c37ff581ec77516e2",
+      "sha256_antes": "efbcac6205dcd6b5aa691d0968355ea079fb77c451bcd01c37ff581ec77516e2",
+      "sha256_depois": "efbcac6205dcd6b5aa691d0968355ea079fb77c451bcd01c37ff581ec77516e2",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "paginas.jsonl",
+      "bytes": 14169508,
+      "sha256": "a75d49f98f736835082bde37de5810a14fa2ad297b8c250b0875852dadbd4b69",
+      "sha256_antes": "a75d49f98f736835082bde37de5810a14fa2ad297b8c250b0875852dadbd4b69",
+      "sha256_depois": "a75d49f98f736835082bde37de5810a14fa2ad297b8c250b0875852dadbd4b69",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "relatorio_qualidade.json",
+      "bytes": 100096,
+      "sha256": "1c9604485b69650d1d307bac7a3f4ec479afb44bf3f0f63f8bf045d7a684a0b3",
+      "sha256_antes": "1c9604485b69650d1d307bac7a3f4ec479afb44bf3f0f63f8bf045d7a684a0b3",
+      "sha256_depois": "1c9604485b69650d1d307bac7a3f4ec479afb44bf3f0f63f8bf045d7a684a0b3",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "secoes.jsonl",
+      "bytes": 151208,
+      "sha256": "9f5da544547eca754e89de44a5e7b1d2071b1f74ce2abad6d438b4d130122b3d",
+      "sha256_antes": "9f5da544547eca754e89de44a5e7b1d2071b1f74ce2abad6d438b4d130122b3d",
+      "sha256_depois": "9f5da544547eca754e89de44a5e7b1d2071b1f74ce2abad6d438b4d130122b3d",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-08fcc68f97f2e734.txt",
+      "bytes": 673784,
+      "sha256": "6c72d9b6d20f2a5e86eb009611887c0b7407ac8b349d23990160867c40a58809",
+      "sha256_antes": "6c72d9b6d20f2a5e86eb009611887c0b7407ac8b349d23990160867c40a58809",
+      "sha256_depois": "6c72d9b6d20f2a5e86eb009611887c0b7407ac8b349d23990160867c40a58809",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-09c5629d767f7dde.txt",
+      "bytes": 518895,
+      "sha256": "860fe56c914cf2d1136a60eff2f1c28616ac9ca5ee6f8be4eb913423ff4b3c84",
+      "sha256_antes": "860fe56c914cf2d1136a60eff2f1c28616ac9ca5ee6f8be4eb913423ff4b3c84",
+      "sha256_depois": "860fe56c914cf2d1136a60eff2f1c28616ac9ca5ee6f8be4eb913423ff4b3c84",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-10a534bac5d81eae.txt",
+      "bytes": 634053,
+      "sha256": "bd8fe811395267d75395fa72b216c3fc66fc15bdb5b4c15bf041b806176c1fdd",
+      "sha256_antes": "bd8fe811395267d75395fa72b216c3fc66fc15bdb5b4c15bf041b806176c1fdd",
+      "sha256_depois": "bd8fe811395267d75395fa72b216c3fc66fc15bdb5b4c15bf041b806176c1fdd",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-20a3cb388cbb78cd.txt",
+      "bytes": 449554,
+      "sha256": "c584f47389777f336d6b727d91472795dc74a95ad0e8a35fc94947e5a4998bf3",
+      "sha256_antes": "c584f47389777f336d6b727d91472795dc74a95ad0e8a35fc94947e5a4998bf3",
+      "sha256_depois": "c584f47389777f336d6b727d91472795dc74a95ad0e8a35fc94947e5a4998bf3",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-281b0b52dc9fb0af.txt",
+      "bytes": 503629,
+      "sha256": "e09b41dbde29278e26fbf99fcc709606124fa420e016b85132326d7ae06aecd8",
+      "sha256_antes": "e09b41dbde29278e26fbf99fcc709606124fa420e016b85132326d7ae06aecd8",
+      "sha256_depois": "e09b41dbde29278e26fbf99fcc709606124fa420e016b85132326d7ae06aecd8",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-372dafa958fd6772.txt",
+      "bytes": 660560,
+      "sha256": "86bcc1a148aef4b189cefca06fbce4beb5a8bc736e2515761f4de9f8cd683f0d",
+      "sha256_antes": "86bcc1a148aef4b189cefca06fbce4beb5a8bc736e2515761f4de9f8cd683f0d",
+      "sha256_depois": "86bcc1a148aef4b189cefca06fbce4beb5a8bc736e2515761f4de9f8cd683f0d",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-3b8627dba63512a2.txt",
+      "bytes": 1134082,
+      "sha256": "8f99f8bf444a4fb6936083c0dd001723957759e983d7d6b46f0933ac76c0a918",
+      "sha256_antes": "8f99f8bf444a4fb6936083c0dd001723957759e983d7d6b46f0933ac76c0a918",
+      "sha256_depois": "8f99f8bf444a4fb6936083c0dd001723957759e983d7d6b46f0933ac76c0a918",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-669b2075a44a05fc.txt",
+      "bytes": 980141,
+      "sha256": "fd890466f429232fce2f3ec255e4de8c22fa1d7e8d6bbf1bd0afc2b543278042",
+      "sha256_antes": "fd890466f429232fce2f3ec255e4de8c22fa1d7e8d6bbf1bd0afc2b543278042",
+      "sha256_depois": "fd890466f429232fce2f3ec255e4de8c22fa1d7e8d6bbf1bd0afc2b543278042",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-78489fd260ea2652.txt",
+      "bytes": 518985,
+      "sha256": "2409d70233597ff9ae5db2ac427a5a9e42cc2fd7a5f03adaaf0a53c56fa7b3f0",
+      "sha256_antes": "2409d70233597ff9ae5db2ac427a5a9e42cc2fd7a5f03adaaf0a53c56fa7b3f0",
+      "sha256_depois": "2409d70233597ff9ae5db2ac427a5a9e42cc2fd7a5f03adaaf0a53c56fa7b3f0",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-983c053e2b99ca99.txt",
+      "bytes": 467457,
+      "sha256": "5b9047b3f2e91551fbe932edc5cfe8ec2292c19bc35b379d49dee397de167976",
+      "sha256_antes": "5b9047b3f2e91551fbe932edc5cfe8ec2292c19bc35b379d49dee397de167976",
+      "sha256_depois": "5b9047b3f2e91551fbe932edc5cfe8ec2292c19bc35b379d49dee397de167976",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-9b9b7bc6e87cd0be.txt",
+      "bytes": 607763,
+      "sha256": "61469c2e33feb7a01db4774ce4405375a8e429d14e57b5ad2530e6888ad79eb2",
+      "sha256_antes": "61469c2e33feb7a01db4774ce4405375a8e429d14e57b5ad2530e6888ad79eb2",
+      "sha256_depois": "61469c2e33feb7a01db4774ce4405375a8e429d14e57b5ad2530e6888ad79eb2",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-bc0f8d49e6035891.txt",
+      "bytes": 540279,
+      "sha256": "90e8476af8df749a0766f07ef035116a7bef0e61011317737c6912c89e8cbfba",
+      "sha256_antes": "90e8476af8df749a0766f07ef035116a7bef0e61011317737c6912c89e8cbfba",
+      "sha256_depois": "90e8476af8df749a0766f07ef035116a7bef0e61011317737c6912c89e8cbfba",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-c04f37fcf4457adc.txt",
+      "bytes": 545106,
+      "sha256": "7ba605fd82623bb3e8f016d754715ce839c4e87a3e5bc498dd6917ca6780a975",
+      "sha256_antes": "7ba605fd82623bb3e8f016d754715ce839c4e87a3e5bc498dd6917ca6780a975",
+      "sha256_depois": "7ba605fd82623bb3e8f016d754715ce839c4e87a3e5bc498dd6917ca6780a975",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-c4bf13c571ed349c.txt",
+      "bytes": 655607,
+      "sha256": "5e56a276baeb0eee825028be07164b7185c2425a83adb83157defd7a7aa6b347",
+      "sha256_antes": "5e56a276baeb0eee825028be07164b7185c2425a83adb83157defd7a7aa6b347",
+      "sha256_depois": "5e56a276baeb0eee825028be07164b7185c2425a83adb83157defd7a7aa6b347",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-cb69c2a540a9a597.txt",
+      "bytes": 707898,
+      "sha256": "8c13f8569409844b1887e882ad5a64031483f20c86cf9e5f45a99bc641f4e0a5",
+      "sha256_antes": "8c13f8569409844b1887e882ad5a64031483f20c86cf9e5f45a99bc641f4e0a5",
+      "sha256_depois": "8c13f8569409844b1887e882ad5a64031483f20c86cf9e5f45a99bc641f4e0a5",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-d23f86e2828f3365.txt",
+      "bytes": 586969,
+      "sha256": "88c0eaa4861c4f3a68c4de3bab99df0427be93f4b785a405b5ec67e85b95242f",
+      "sha256_antes": "88c0eaa4861c4f3a68c4de3bab99df0427be93f4b785a405b5ec67e85b95242f",
+      "sha256_depois": "88c0eaa4861c4f3a68c4de3bab99df0427be93f4b785a405b5ec67e85b95242f",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-d2e15be704adcec1.txt",
+      "bytes": 1414890,
+      "sha256": "e7bc33ee01013e3145e48ac73e77b15bc212b4c140f2ce429e2fc8baf721503d",
+      "sha256_antes": "e7bc33ee01013e3145e48ac73e77b15bc212b4c140f2ce429e2fc8baf721503d",
+      "sha256_depois": "e7bc33ee01013e3145e48ac73e77b15bc212b4c140f2ce429e2fc8baf721503d",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-d398eb81592ffb13.txt",
+      "bytes": 635920,
+      "sha256": "49a852119c7436a518692842e9d2392aa45b4ecebe60b4243f88a38591ef6282",
+      "sha256_antes": "49a852119c7436a518692842e9d2392aa45b4ecebe60b4243f88a38591ef6282",
+      "sha256_depois": "49a852119c7436a518692842e9d2392aa45b4ecebe60b4243f88a38591ef6282",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "textos_obras/obra-da23519f73b81594.txt",
+      "bytes": 578325,
+      "sha256": "887337c0c59a215de88eda7e19e8004ce031ce144b89ecb47de13435bc580557",
+      "sha256_antes": "887337c0c59a215de88eda7e19e8004ce031ce144b89ecb47de13435bc580557",
+      "sha256_depois": "887337c0c59a215de88eda7e19e8004ce031ce144b89ecb47de13435bc580557",
+      "conteudo_inalterado": true
+    },
+    {
+      "arquivo": "vetores_e5.npy",
+      "bytes": 35201152,
+      "sha256": "5a01ae115a1cc8c60fcd76663f2ca7a2c4b9a1b21bcd74972df30f375e6d381a",
+      "sha256_antes": "5a01ae115a1cc8c60fcd76663f2ca7a2c4b9a1b21bcd74972df30f375e6d381a",
+      "sha256_depois": "5a01ae115a1cc8c60fcd76663f2ca7a2c4b9a1b21bcd74972df30f375e6d381a",
+      "conteudo_inalterado": true
+    }
+  ],
+  "ordem_linhas_declarada": {
+    "total": 8594,
+    "sha256": "9c9cbce5148a6a7273bd75246321b8e5abc14e828d92693bc98ac1bb9d5fd3c2",
+    "algoritmo": "SHA-256 das linhas JSON canônico (UTF-8, sort_keys, separators=',:') com LF; indice começa em zero, conforme fragmentos.jsonl",
+    "amostra": [
+      {
+        "indice": 0,
+        "fragmento_id": "obra-78489fd260ea2652-b00000-f000",
+        "entrada_sha256": "b86644665284d565f09321c6b857feecbaea42c9680eb9a8d5c502d5afe67179"
+      },
+      {
+        "indice": 1,
+        "fragmento_id": "obra-78489fd260ea2652-b00000-f001",
+        "entrada_sha256": "dee243b2ff752c77ff32fa646f14ad96ddf67ce0506b46f15002d41e933b5db9"
+      },
+      {
+        "indice": 2,
+        "fragmento_id": "obra-78489fd260ea2652-b00001-f000",
+        "entrada_sha256": "4f3d28da9af9c499dcf3f2ee6be80f96df829fb70ba46fff7490c2539340c957"
+      },
+      {
+        "indice": 3,
+        "fragmento_id": "obra-78489fd260ea2652-b00002-f000",
+        "entrada_sha256": "dd4c7fdae208cbb6571d8085a25c17a38193cce19d26c3fe274b5c1a89e1ac23"
+      },
+      {
+        "indice": 4,
+        "fragmento_id": "obra-78489fd260ea2652-b00003-f000",
+        "entrada_sha256": "28ac6c637518bea516aa6d04df9774be5202e3f00bf5ff42a4ca01052558dafb"
+      },
+      {
+        "indice": 5,
+        "fragmento_id": "obra-78489fd260ea2652-b00004-f000",
+        "entrada_sha256": "148ea31f31f55a830e78788a6d7b17a33568f51f28b15b986a0561142904cb54"
+      },
+      {
+        "indice": 6,
+        "fragmento_id": "obra-78489fd260ea2652-b00005-f000",
+        "entrada_sha256": "8354ac0eb5b800de14508b3c6553df38cbf3df9700ab4e7f8da53813c466bf1e"
+      },
+      {
+        "indice": 7,
+        "fragmento_id": "obra-78489fd260ea2652-b00006-f000",
+        "entrada_sha256": "04e2257f79937f4fc269a5bba1ea92f583149042d9b857efa9cd8a019ba8943d"
+      }
+    ],
+    "identidade_semantica_vetor_texto": "nao_comprovada"
+  },
+  "cruzamentos_evidencia": {
+    "txt_auditados_mac_identicos_ao_zip_recebido": 19,
+    "manifesto_identico_ao_recebido_anteriormente": true,
+    "relatorio_qualidade_identico_ao_recebido_anteriormente": true,
+    "pdfs_invalidos_identificados_como_appledouble": 19
+  },
+  "limites": [
+    "Esta auditoria não autoriza a ativação do corpus no aplicativo.",
+    "Não comprova fidelidade editorial da extração nem validade das classificações lexicais.",
+    "Sem hashes originais confiáveis por linha, não comprova que cada vetor corresponde ao fragmento na mesma posição. Uma permutação de vetores pode passar.",
+    "Os hashes produzidos são um baseline atual, não evidência de integridade histórica.",
+    "Tokens declarados são conferidos contra limites; contagens não são recalculadas sem o tokenizador. Nenhum modelo é carregado.",
+    "779 blocos atravessam seções; a seção declarada corresponde à página inicial.",
+    "A fonte antiga do volume 19 continua corrompida; a nova fonte textual está preparada, sem índices ou vetores novos.",
+    "Volumes 1 e 6 têm correções por fonte a tratar; volumes 4, 5 e 7 incluem publicidade; a conferência editorial integral permanece pendente."
+  ],
+  "decisao": "Encerrar a etapa1 de auditoria e registro das fontes; preservar os limites e decisões para a conversa sobre etapa2.",
+  "etapa2_iniciada_nesta_entrega": false
+}
