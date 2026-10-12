@@ -92,6 +92,12 @@
   "decisao": {
     "volume19_gerado_aceito_com_limites": true,
     "ativado_no_mac": false,
-    "proxima_verificacao": "Busca composta sobre os 18 demais volumes e novo 19 no corpus real do Mac; esperado 9.034 fragmentos totais e 7.662 elegíveis."
+    "proxima_verificacao": "Iniciar manualmente o servidor com a configuração validada e avaliar os resultados com uma exportação real do Língua."
+  },
+  "seguimento_mac": {
+    "verificacao_tecnica_concluida": true,
+    "checks_passaram": 18,
+    "falhas": 0,
+    "referencia": "../busca/CONCLUSAO_ETAPA3.json"
   }
 }

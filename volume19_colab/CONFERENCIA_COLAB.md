@@ -6,6 +6,6 @@ Foram conferidos todos os **440 vetores de 1.024 dimensões**, finitos, distinto
 
 A recuperação composta foi exercitada com o corpus novo real e uma base sintética. Três consultas técnicas, usando linhas já presentes no corpus, recuperaram candidatos e passaram na conferência literal das citações. Esse teste confirma integração técnica; não avalia pertinência interpretativa de relatos. Não foi reexecutada inferência nesta auditoria, nem retokenização independente. A revisão editorial integral, bibliografia e numeração impressa continuam pendentes.
 
-A próxima conferência deve rodar no Mac, junto à base completa. Esperam-se 9.034 fragmentos totais, dos quais 7.662 elegíveis: 7.222 da base após excluir o volume 19 antigo, mais 440 novos. As 1.372 linhas antigas continuam no NPY original, fora da recuperação. As matrizes permanecem separadas.
+A conferência junto à base completa do Mac foi recebida depois deste resultado do Colab: dezoito verificações passaram, com 9.034 fragmentos totais e 7.662 elegíveis (7.222 da base após excluir o volume 19 antigo, mais 440 novos). Veja [a conclusão da etapa 3](../busca/CONCLUSAO_ETAPA3.md). As 1.372 linhas antigas continuam no NPY original, fora da recuperação. As matrizes permanecem separadas.
 
-Veja [a conferência técnica](CONFERENCIA_COLAB.json). A geração de embeddings foi concluída; a validação de busca no corpus completo e a ativação do servidor permanecem pendentes.
+Veja [a conferência técnica](CONFERENCIA_COLAB.json). A geração e a validação técnica da busca no corpus completo foram concluídas; a ativação do servidor e a avaliação com relatos reais são os próximos passos.
