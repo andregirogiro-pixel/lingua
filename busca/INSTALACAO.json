@@ -1,0 +1,37 @@
+{
+  "etapa": 3,
+  "operacao": "busca_opcional_e_preparacao_volume19",
+  "base": {
+    "agente_analista/__init__.py": "139cc009000b9df2a74b96e506c2ed3482aae43d2d9c54481c696cf710349e31",
+    "agente_analista/corpus.py": "52f916dd986e800c3ad647026c82a7f72a78c35c086606408a4d0d03ffa9bb5d",
+    "agente_analista/importacao.py": "244895cf73539b1592f961b2a65aab634add33659ba890ca614fdff790b54b75",
+    "agente_analista/contratos_importacao.py": "1b5a33191c43d2f96b6cb7730f1fa93234572bc067a725529b6f0eb7360aa8eb",
+    "agente_analista/validacao_vetorial.py": "2a4035e82ba283c75fddc14711dab6905ac7faf085eb6fb460cd33c95aa38d67",
+    "agente_analista/entrada.py": "ff250b44a17052b09f042d8f38c7c2aa89d4d0a950e5f3a086ffc4370b5a8e06",
+    "agente_analista/ligacoes.py": "c2f89e11c90d0f7ecfabc1ad0518c47a5a0e3ea916327fd1eb3342ca1ce4f2d5",
+    "agente_analista/modelos.py": "c2b5527b5945aee17a7e9182157f78187b78474de0ce525b755f53542c853936",
+    "agente_analista/persistencia.py": "c015a4708ddaa14d81d97fb3880acd30ad2e6430c2bf7e3658c877b9c423d94f",
+    "agente_analista/transporte.py": "9d52c485bd03c79c4e2420fe3a9366ea4a9b3bdc6a8874143de563d89e02a92c",
+    "agente_analista/camada_a.py": "eb2bcbbc2a6afbcb24bb27da800ba25ca8d44552efb6ce26aa100199cf5f3b52",
+    "agente_analista/tests/test_agente_analista_camada_a.py": "2d8b8de990cc5a310ad49b4e071759437bb97c166696a018328775d8dc9433f7",
+    "agente_analista/tests/test_agente_analista_camada_a_core.py": "36200c937efc882caeacf5450c6223e162c388fce955173c605a8156f17b8ec1"
+  },
+  "substituir": {
+    "agente_analista/app.py": {
+      "antes": "8fca25e93219791b07380223ef4c5d91b78d73a79c453756ae6a8c19cb47f654",
+      "depois": "b2ac8a42278727f67d66a6ad3d96bc4656017e75d5f0db03d6ce1effe9cde588"
+    },
+    "agente_analista/busca.py": {
+      "antes": "6025b5f3cbedcb9544acdab0a187ecaa991f51a09a0344102f00a4129c4afa81",
+      "depois": "2a361667dec07d5cc0a6f4809a22bf0836a989d3ba4523e069969550205c1244"
+    }
+  },
+  "novos": {
+    "agente_analista/busca_camada_a.py": "997acd162c6ba82da6e80eddb0760251f398b26ee89e28ba7f08b28a7ac623d7",
+    "agente_analista/preparar_volume19.py": "37f1984db5e17e2472f32326e671520117913f441cf55a44d7382fd3389031b6",
+    "agente_analista/AMBIENTE.md": "f07afe6a64d59683f68d986d3f3ec53ab612b951ac2410ea3666e044ad498c20",
+    "agente_analista/tests/test_agente_analista_backend.py": "14d82b5410a30a0aa9cef24654f29320db86e4166249cb35b03c1d57716b2b59",
+    "agente_analista/tests/test_agente_analista_busca_camada_a.py": "e1cb089bf4ada9b591eb4b3653ae92a1a0facb4a4dee3137aaebb1e2ed4bf890",
+    "agente_analista/tests/test_agente_analista_preparar_volume19.py": "41d3068c6b8ca2ca7d8b971aa83fccb607e441e8836556ff1c238a2adaf92d46"
+  }
+}

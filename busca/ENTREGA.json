@@ -1,0 +1,110 @@
+{
+  "etapa": 3,
+  "situacao": "implementacao_e_notebook_preparados_pendente_execucao_colab_e_diagnostico_mac",
+  "arquivos": {
+    "INSTALACAO.json": {
+      "bytes": 2690,
+      "sha256": "d0163ecdd16e7323aed7152851252adfc5b716edd999b09370c42eaece766982"
+    },
+    "README.md": {
+      "bytes": 5148,
+      "sha256": "19be8e00aace7ec430e3705be3d9cba56370ac6f86f9a7307208f9622a676a3b"
+    },
+    "VALIDACAO.json": {
+      "bytes": 3252,
+      "sha256": "63b35a4b465c9923c12e8663245b3225b497183a4cc8ea06fb63ea17b80e9198"
+    },
+    "VALIDACAO_INSTALADOR.json": {
+      "bytes": 442,
+      "sha256": "195b9669644e2ad96fc70b1fd84c492cb976621100cd18be847848905a626805"
+    },
+    "aplicar_e_verificar_no_mac.sh": {
+      "bytes": 1400,
+      "sha256": "5c887f25c5754aa2116517d11a3040c5349f314c619599f9d9dda898e2bd44a0"
+    },
+    "arquivos/agente_analista/AMBIENTE.md": {
+      "bytes": 8512,
+      "sha256": "f07afe6a64d59683f68d986d3f3ec53ab612b951ac2410ea3666e044ad498c20"
+    },
+    "arquivos/agente_analista/app.py": {
+      "bytes": 20480,
+      "sha256": "b2ac8a42278727f67d66a6ad3d96bc4656017e75d5f0db03d6ce1effe9cde588"
+    },
+    "arquivos/agente_analista/busca.py": {
+      "bytes": 15982,
+      "sha256": "2a361667dec07d5cc0a6f4809a22bf0836a989d3ba4523e069969550205c1244"
+    },
+    "arquivos/agente_analista/busca_camada_a.py": {
+      "bytes": 15936,
+      "sha256": "997acd162c6ba82da6e80eddb0760251f398b26ee89e28ba7f08b28a7ac623d7"
+    },
+    "arquivos/agente_analista/preparar_volume19.py": {
+      "bytes": 38332,
+      "sha256": "37f1984db5e17e2472f32326e671520117913f441cf55a44d7382fd3389031b6"
+    },
+    "arquivos/agente_analista/tests/test_agente_analista_backend.py": {
+      "bytes": 13650,
+      "sha256": "14d82b5410a30a0aa9cef24654f29320db86e4166249cb35b03c1d57716b2b59"
+    },
+    "arquivos/agente_analista/tests/test_agente_analista_busca_camada_a.py": {
+      "bytes": 16390,
+      "sha256": "e1cb089bf4ada9b591eb4b3653ae92a1a0facb4a4dee3137aaebb1e2ed4bf890"
+    },
+    "arquivos/agente_analista/tests/test_agente_analista_preparar_volume19.py": {
+      "bytes": 13327,
+      "sha256": "41d3068c6b8ca2ca7d8b971aa83fccb607e441e8836556ff1c238a2adaf92d46"
+    },
+    "dados/ADAPTADOR_ETAPA2_MAC.json": {
+      "bytes": 104567,
+      "sha256": "18ca4a6cde0ba470d0bb9fcb885958a2c49228031109a78f814faedb5fbc4ae6"
+    },
+    "dados/CONCLUSAO_ETAPA1.json": {
+      "bytes": 19468,
+      "sha256": "c6e43bc1d4d7b83825d22f1b44607f3f693772336e72970620f44c272f5af496"
+    },
+    "dados/PROVENIENCIA_ADAPTADOR_ETAPA2.json": {
+      "bytes": 364,
+      "sha256": "ad6382978241cd1ca720978b5ee611f860b7746c902a4f225c079530ae0035a1"
+    },
+    "ferramentas/aplicar_busca.py": {
+      "bytes": 8266,
+      "sha256": "5cb965d6e5144f1b45216cea2bff00a5ed877846812a98bd207173ea69a4ece8"
+    },
+    "ferramentas/test_verificar_busca_no_mac.py": {
+      "bytes": 6155,
+      "sha256": "57594803838b94c0b41f84a595841a1d1ef71605cfe3d7d948e0396257fdfe37"
+    },
+    "ferramentas/verificar_busca_no_mac.py": {
+      "bytes": 25784,
+      "sha256": "a925dcf0d82b5c29b15c71b4774ffd7d819625c5c54de23c79b6a1f6d33d8b02"
+    },
+    "ferramentas/verificar_leitura_base.py": {
+      "bytes": 21523,
+      "sha256": "9bcd9a89bc70ee17bf0e645b3bc948efdbe02e0fa60204bd09868da92804b118"
+    },
+    "volume19_fonte_v2/fonte.json": {
+      "bytes": 1823,
+      "sha256": "fe8f25c9dfb4281800a4216eba6a6780b5638fd952fedee74075f309c5cfea42"
+    },
+    "volume19_fonte_v2/manifesto.json": {
+      "bytes": 2167,
+      "sha256": "10e0bb23757b34c62c3c0a6fde950022f5097d6da31617c45faeec4d466ee376"
+    },
+    "volume19_fonte_v2/paginas.jsonl": {
+      "bytes": 812961,
+      "sha256": "f37696dd02acb34dca5e2498c34ca65ed9d82abc31abe68622b8121ba99f9e36"
+    },
+    "volume19_fonte_v2/secoes.jsonl": {
+      "bytes": 21188,
+      "sha256": "2e356532e1adb704916c2e7641bb6f785ff893c3f2b94ff3c58246721a3666a6"
+    },
+    "volume19_fonte_v2/texto_volume19.txt": {
+      "bytes": 557922,
+      "sha256": "ab3e323c1fbcd5a89b9e8de7669d6a7e0948558f995cdee11b671ff960be4606"
+    },
+    "volume19_fonte_v2/validacao_preparacao.json": {
+      "bytes": 605,
+      "sha256": "1ddd1b6d59e5dab784bb23830e193e729436cf2e1e1ac4531daafe00d23e95d0"
+    }
+  }
+}

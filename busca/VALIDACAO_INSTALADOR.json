@@ -1,0 +1,12 @@
+{
+  "verificacoes_passaram": 7,
+  "verificacoes": [
+    "aplicação com backup dos dois originais e preservação da base",
+    "idempotência sem reescrever arquivos iguais",
+    "recusa antes de escrever: conflito",
+    "recusa antes de escrever: novo_conflitante",
+    "recusa antes de escrever: base_diferente",
+    "rollback após falha parcial e remoção dos temporários e recibo incompleto",
+    "recibo existente preservado"
+  ]
+}

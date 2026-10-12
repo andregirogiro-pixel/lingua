@@ -1,0 +1,85 @@
+{
+  "etapa": 3,
+  "situacao": "implementacao_e_notebook_preparados_pendente_execucao_colab_e_diagnostico_mac",
+  "testes_fonte": {
+    "executados": 77,
+    "passaram": 77,
+    "skips": 0,
+    "detalhes": {
+      "leitor_e_adaptador_etapa2": 38,
+      "busca_camada_a": 16,
+      "backend_app": 11,
+      "preparador_volume19": 12
+    }
+  },
+  "testes_driver": {
+    "executados": 7,
+    "passaram": 7,
+    "skips": 0
+  },
+  "testes_notebook_sem_inferencia": {
+    "executados": 8,
+    "passaram": 8,
+    "schema": "nbformat4.5;nbformat5.10.4",
+    "celulas_codigo_compiladas": 7
+  },
+  "verificacoes_instalador": {
+    "casos_isolados_passaram": 7,
+    "versao_real_codigo_recebido": "2 backups, 6 arquivos novos, demais arquivos preservados, repetição idempotente conferida"
+  },
+  "regressao_legado": {
+    "metodos_executados": 58,
+    "metodos_passaram": 57,
+    "metodos_com_divergencia_preexistente": 1,
+    "falhas_subtestes": 2,
+    "problema": "BuscaTests.test_estrategia_analista_continua_restrita_a_paragrafos_e_documento espera rejeitar períodos/contextos que a implementação recebida aceita. Regra e teste mantidos.",
+    "observacao": "Divergência da entrada sobre dois parágrafos também já estava registrada na etapa 2; não foi reexecutada nesta seleção."
+  },
+  "servidor_funcional_nuvem": {
+    "corpus": "fixture sintética do leitor real",
+    "rotas_http_200": [
+      "/",
+      "/static/app.js",
+      "/api/status"
+    ],
+    "backend": "camada_a",
+    "status_pronto": true,
+    "fragmentos_totais": 5,
+    "fragmentos_elegiveis": 4,
+    "inferencia_local": false,
+    "provedores_chamados": false,
+    "encerrado": true
+  },
+  "mudancas_no_projeto": {
+    "originais_modificados": [
+      "agente_analista/app.py",
+      "agente_analista/busca.py"
+    ],
+    "arquivos_novos": 6,
+    "adaptador_etapa2_preservado": true,
+    "corpora_originais_alterados": false,
+    "banco_usuario_alterado": false
+  },
+  "compatibilidade": {
+    "corpus_real_exigido_para_importacao": true,
+    "manifesto_isolado_nao_basta": true,
+    "servicos_fake_com_pasta_preservados": true,
+    "backend_padrao": "legado",
+    "selecao_camada_a": "explícita por parâmetro ou AGENTE_ANALISTA_CORPUS_BACKEND=camada_a"
+  },
+  "nao_executado": [
+    "Inferência real E5/Torch na nuvem ou GPU do Colab",
+    "Busca sobre o corpus completo do Mac",
+    "Validação da relevância com consultas reais de relatos",
+    "Suíte completa de importação (dez fixtures JSON congeladas ausentes e índice legado indisponível)",
+    "Chamadas a provedores de justificativas"
+  ],
+  "limites": [
+    "A revisão editorial integral permanece pendente.",
+    "Os testes de geração usam encoder sintético explicitamente marcado; não foram entregues como vetores reais.",
+    "A exclusão de old19 é fixa e ocorre antes da seleção/fusão; suas linhas são preservadas.",
+    "As matrizes de fontes são preservadas separadamente; FTS5 elegível é temporário em memória.",
+    "A correspondência histórica de embeddings do corpus antigo permanece não comprovada.",
+    "O usuário deve fechar o servidor/editor durante a aplicação; o instalador não garante exclusão de edições concorrentes entre conferência e substituição."
+  ]
+}

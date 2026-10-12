@@ -1,0 +1,29 @@
+{
+  "arquivo": "gerar_volume19_colab.ipynb",
+  "schema_nbformat": "4.5",
+  "validador": "nbformat 5.10.4",
+  "estrutura_validada": true,
+  "celulas": 14,
+  "celulas_codigo": 7,
+  "sintaxe_python_validada": true,
+  "testes_fluxo_sem_inferencia": 8,
+  "testes_fluxo_passaram": 8,
+  "escopo_testes": "Fixtures descartáveis de fluxo; nenhuma geração de embeddings reais.",
+  "checks_fluxo": [
+    "integridade SHA-256 pacote",
+    "ZIP sem escape de caminho",
+    "reextração só com bytes iguais",
+    "revisão e fonte fixadas",
+    "recusa de sobrescrita",
+    "recusa de manifesto com embeddings sintéticos",
+    "integridade arquivos dentro ZIP final",
+    "dois downloads Colab"
+  ],
+  "inferência_torch_executada": false,
+  "gpu_colab_testada": false,
+  "dependencias_colab_instaladas_neste_teste": false,
+  "pendencias": [
+    "Usuário executará o notebook no Colab para gerar e conferir os vetores reais."
+  ],
+  "pacote_sha256_fixado": "605e807571cc1778aaaead56903fa8301b3134a90e3f3f463ae64dd69321289e"
+}
